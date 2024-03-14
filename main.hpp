@@ -35,12 +35,27 @@ int getClosestMed(int rdnum1, int rdnum2, int rdnum3)
                 med = rdnum1;
         }
 
-        if ((rdnum2 < rdnum1) && (rdnum2 > rdnum3))
+        else if ((rdnum2 < rdnum1) && (rdnum2 > rdnum3))
         {
                 med = rdnum2;
         }
 
-        if ((rdnum3 < rdnum1) && (rdnum3 > rdnum2))
+        else if ((rdnum3 < rdnum1) && (rdnum3 > rdnum2))
+        {
+                med = rdnum3;
+        }
+
+          else if ((rdnum1 > rdnum2) && (rdnum1 < rdnum3))
+        {
+                med = rdnum1;
+        }
+
+        else if ((rdnum2 > rdnum1) && (rdnum2 < rdnum3))
+        {
+                med = rdnum2;
+        }
+
+        else if ((rdnum3 > rdnum1) && (rdnum3 < rdnum2))
         {
                 med = rdnum3;
         }
